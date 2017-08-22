@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>factandswap</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id = "demo2"></p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<p id = "demo5"></p>
+<script type = "text/javascript">
+var n = 5, fact = 1;
+var a = 10;
+var b = 5;
+for(var i = 1; i <= n;i++){
+		fact = fact*i;
+	}
+s = "factorial " + fact;
+alert(fact);
+document.getElementById("demo").innerHTML = s;
+//Using 3rd variable
+/*var temp = a;
+a = b;
+b = temp;
+document.getElementById("demo2").innerHTML = "number1 is " + a + "number2 is " + b;
+*/
+//without 3rd variable swapping
+a = a + b;
+b = a - b;
+a = a - b;
+document.getElementById("demo2").innerHTML = "number1 is " + a + "number2 is " + b;
+
+//String concatination
+var str1 = "Heyy";
+var str2 = "Ammu";
+var str3 = str1.concat(str2);
+document.getElementById("demo3").innerHTML = "after Concatenation " + str3;
+
+
+</script>
+
+</body>
+</html>

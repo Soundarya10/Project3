@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>large n small</title>
+
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script type = "text/javascript">
+var numb = [1,2,3,4,5];
+var l = numb[0];
+var s = numb[0];
+
+for (var i = 0; i < numb.length; i++) {
+	if (numb[i] > l)
+		l = numb[i];
+	else if (numb[i] < s)
+		s = numb[i];
+
+}
+
+l = "largest " + l;
+s = "smallest " + s;
+document.getElementById("demo").innerHTML = l;
+document.getElementById("demo1").innerHTML = s;
+
+</script>
+</body>
+</html>
